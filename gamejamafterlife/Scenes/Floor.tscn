@@ -1,6 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://cqxcow0papka3"]
+[gd_scene load_steps=4 format=3 uid="uid://cqxcow0papka3"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_vo372"]
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_vopk1"]
+vertices = PackedVector3Array(-49.5, 0.5, -49.5, -49.5, 0.5, 49.5, 49.5, 0.5, 49.5, 49.5, 0.5, -49.5)
+polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1)]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_0bxvf"]
 size = Vector2(100, 100)
@@ -10,5 +14,9 @@ size = Vector2(100, 100)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("WorldBoundaryShape3D_vo372")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+navigation_mesh = SubResource("NavigationMesh_vopk1")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D"]
 mesh = SubResource("PlaneMesh_0bxvf")
+skeleton = NodePath("../..")

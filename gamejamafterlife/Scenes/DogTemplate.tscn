@@ -1,16 +1,15 @@
 [gd_scene load_steps=3 format=3 uid="uid://csn01noirb1qi"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_h74la"]
-size = Vector3(1, 1, 2)
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_p4j6k"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_wih8g"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_mgnhf"]
 
-[node name="DogTemplate" type="StaticBody3D"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("BoxShape3D_h74la")
+[node name="DogTemplate" type="CharacterBody3D"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
-mesh = SubResource("CapsuleMesh_wih8g")
-skeleton = NodePath("../CollisionShape3D")
+mesh = SubResource("CapsuleMesh_p4j6k")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_mgnhf")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]

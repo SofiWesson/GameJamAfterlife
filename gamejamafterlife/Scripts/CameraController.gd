@@ -10,9 +10,7 @@ func _ready() -> void:
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta: float) -> void:
-
-func _physics_process(delta: float) -> void:
+func _process(delta: float) -> void:
 	CameraMovement(delta)
 	CameraZoom(delta)
 
@@ -26,7 +24,7 @@ func CameraMovement(delta: float):
 	position += moveDirection.x * transform.basis.x.normalized() * speed * delta
 
 func CameraZoom(delta: float):
-	# zooms camera in and out when scrolling
+	# zooms camera in and out when scrolling in local space
 	if Input.is_action_just_pressed("ZoomIn"):
 		camera.position -= camera.transform.basis.z.normalized() * zoomSpeed * delta
 	if Input.is_action_just_pressed("ZoomOut"):

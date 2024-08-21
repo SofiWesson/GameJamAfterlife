@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://br7q2qxudu6vg"]
+
+[ext_resource type="PackedScene" uid="uid://csn01noirb1qi" path="res://Scenes/DogTemplate.tscn" id="1_klq5s"]
+[ext_resource type="Script" path="res://addons/beehave/nodes/beehave_tree.gd" id="2_eshok"]
+
+[node name="DogTemplate" instance=ExtResource("1_klq5s")]
+
+[node name="BeehaveTree" type="Node" parent="." index="2" node_paths=PackedStringArray("blackboard", "actor")]
+script = ExtResource("2_eshok")
+blackboard = NodePath("@Node@32690")
+actor = NodePath("..")

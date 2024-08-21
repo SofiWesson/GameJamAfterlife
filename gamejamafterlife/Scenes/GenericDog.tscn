@@ -1,12 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://br7q2qxudu6vg"]
+[gd_scene load_steps=5 format=3 uid="uid://br7q2qxudu6vg"]
 
 [ext_resource type="PackedScene" uid="uid://csn01noirb1qi" path="res://Scenes/DogTemplate.tscn" id="1_klq5s"]
 [ext_resource type="Script" path="res://addons/beehave/nodes/beehave_tree.gd" id="2_eshok"]
+[ext_resource type="Script" path="res://Scripts/DogMovement.gd" id="2_v5xnu"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vlr60"]
 size = Vector3(1, 1, 2.00027)
 
 [node name="DogTemplate" instance=ExtResource("1_klq5s")]
+script = ExtResource("2_v5xnu")
 
 [node name="MeshInstance3D" parent="." index="0"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
@@ -16,5 +18,5 @@ shape = SubResource("BoxShape3D_vlr60")
 
 [node name="BeehaveTree" type="Node" parent="." index="3" node_paths=PackedStringArray("blackboard", "actor")]
 script = ExtResource("2_eshok")
-blackboard = NodePath("@Node@49788")
+blackboard = NodePath("@Node@51994")
 actor = NodePath("..")

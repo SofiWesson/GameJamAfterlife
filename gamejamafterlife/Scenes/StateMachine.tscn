@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://bnvuamjqd3532"]
+
+[ext_resource type="Script" path="res://Scripts/StateMachine.gd" id="1_wwoui"]
+[ext_resource type="PackedScene" uid="uid://78djkwqrilui" path="res://Scenes/PlayState.tscn" id="2_feoro"]
+[ext_resource type="PackedScene" uid="uid://bcspb8o7nvc5l" path="res://Scenes/BuildState.tscn" id="3_8odsr"]
+
+[node name="StateMachine" type="Node"]
+script = ExtResource("1_wwoui")
+
+[node name="PlayState" parent="." instance=ExtResource("2_feoro")]
+process_mode = 4
+
+[node name="BuildState" parent="." instance=ExtResource("3_8odsr")]
+process_mode = 4

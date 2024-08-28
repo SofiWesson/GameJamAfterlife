@@ -18,5 +18,5 @@ shape = SubResource("BoxShape3D_vlr60")
 
 [node name="BeehaveTree" type="Node" parent="." index="3" node_paths=PackedStringArray("blackboard", "actor")]
 script = ExtResource("2_eshok")
-blackboard = NodePath("@Node@51994")
+blackboard = NodePath("@Node@17372")
 actor = NodePath("..")

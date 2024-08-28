@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://d2ku3mvywqbkp"]
+[gd_scene load_steps=5 format=3 uid="uid://d2ku3mvywqbkp"]
 
 [ext_resource type="PackedScene" uid="uid://cqxcow0papka3" path="res://Scenes/Floor.tscn" id="1_46i6b"]
 [ext_resource type="PackedScene" uid="uid://dlfw5ngsaq4y2" path="res://Scenes/Camera.tscn" id="2_fi64s"]
+[ext_resource type="PackedScene" uid="uid://bnvuamjqd3532" path="res://Scenes/StateMachine.tscn" id="3_ohqtr"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_4h2hj"]
 
@@ -18,3 +19,5 @@ mesh = SubResource("BoxMesh_4h2hj")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.827688, -0.332751, -0.451894, 0.561188, 0.49077, 0.666493, 0, -0.805246, 0.592941, 0, 5.72384, 0)
+
+[node name="StateMachine" parent="." instance=ExtResource("3_ohqtr")]

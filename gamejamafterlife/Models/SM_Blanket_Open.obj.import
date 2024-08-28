@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cuycb0l4eixw1"
+path="res://.godot/imported/SM_Blanket_Open.obj-e8616a3d2af35cb4ac4cce35516b9e82.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Blanket_Open.obj-e8616a3d2af35cb4ac4cce35516b9e82.mesh"]
+
+source_file="res://Models/SM_Blanket_Open.obj"
+dest_files=["res://.godot/imported/SM_Blanket_Open.obj-e8616a3d2af35cb4ac4cce35516b9e82.mesh", "res://.godot/imported/SM_Blanket_Open.obj-e8616a3d2af35cb4ac4cce35516b9e82.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

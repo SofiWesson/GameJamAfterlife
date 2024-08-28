@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://cp14ldqxr0vl3"]
+[gd_scene load_steps=2 format=3 uid="uid://cp14ldqxr0vl3"]
 
-[node name="Placeable" type="Node"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_cgj5t"]
+
+[node name="Placeable" type="StaticBody3D"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="SelectableCollider" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_cgj5t")

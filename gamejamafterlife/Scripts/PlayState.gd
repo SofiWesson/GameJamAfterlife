@@ -1,4 +1,7 @@
 extends Node
 
+func Start():
+	pass
+
 func Update():
-	print("Play State Active")
+	pass

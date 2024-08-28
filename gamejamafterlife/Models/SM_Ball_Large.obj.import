@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ufniianxvd1n"
+path="res://.godot/imported/SM_Ball_Large.obj-e4e741f4725d157209af5684f3a5f0d1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Ball_Large.obj-e4e741f4725d157209af5684f3a5f0d1.mesh"]
+
+source_file="res://Models/SM_Ball_Large.obj"
+dest_files=["res://.godot/imported/SM_Ball_Large.obj-e4e741f4725d157209af5684f3a5f0d1.mesh", "res://.godot/imported/SM_Ball_Large.obj-e4e741f4725d157209af5684f3a5f0d1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

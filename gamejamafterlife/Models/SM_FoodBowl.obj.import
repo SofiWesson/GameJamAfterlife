@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c655jlaoyw06w"
+path="res://.godot/imported/SM_FoodBowl.obj-58f8fbeebf651d0c12ec081a75aef0f7.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_FoodBowl.obj-58f8fbeebf651d0c12ec081a75aef0f7.mesh"]
+
+source_file="res://Models/SM_FoodBowl.obj"
+dest_files=["res://.godot/imported/SM_FoodBowl.obj-58f8fbeebf651d0c12ec081a75aef0f7.mesh", "res://.godot/imported/SM_FoodBowl.obj-58f8fbeebf651d0c12ec081a75aef0f7.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

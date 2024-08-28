@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmskuvxc3e15w"]
+
+[ext_resource type="PackedScene" uid="uid://cp14ldqxr0vl3" path="res://Scenes/Placeable.tscn" id="1_02tfn"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_6o6oa"]
+
+[node name="Placeable" instance=ExtResource("1_02tfn")]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." index="1"]
+mesh = SubResource("BoxMesh_6o6oa")

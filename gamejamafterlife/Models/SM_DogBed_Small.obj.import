@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ouqosuvh72vv"
+path="res://.godot/imported/SM_DogBed_Small.obj-88e46b1a9811c1aa0ba81d16800d73ba.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_DogBed_Small.obj-88e46b1a9811c1aa0ba81d16800d73ba.mesh"]
+
+source_file="res://Models/SM_DogBed_Small.obj"
+dest_files=["res://.godot/imported/SM_DogBed_Small.obj-88e46b1a9811c1aa0ba81d16800d73ba.mesh", "res://.godot/imported/SM_DogBed_Small.obj-88e46b1a9811c1aa0ba81d16800d73ba.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

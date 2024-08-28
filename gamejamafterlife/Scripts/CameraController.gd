@@ -1,7 +1,7 @@
 extends Node3D
 
-const speed = 10.0
-const zoomSpeed = 10.0
+const speed := 10.0
+const zoomSpeed := 10.0
 
 @onready var camera: Camera3D = $Camera3D
 

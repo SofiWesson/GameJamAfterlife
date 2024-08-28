@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://c7owge1deheb2"]
+
+[node name="Wall" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="."]

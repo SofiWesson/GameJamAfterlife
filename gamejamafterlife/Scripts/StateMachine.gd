@@ -3,9 +3,7 @@ extends Node
 @onready var playState: Node = $PlayState
 @onready var buildState: Node = $BuildState
 
-var isPlayState: bool = true
-
-var stateStack: Array
+var stateStack: Array[Node]
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

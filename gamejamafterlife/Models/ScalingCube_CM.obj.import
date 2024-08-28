@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ck0aqpu2ddl5x"
+path="res://.godot/imported/ScalingCube_CM.obj-15fc887c2f25395cfe5def3b9fa6c712.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ScalingCube_CM.obj-15fc887c2f25395cfe5def3b9fa6c712.mesh"]
+
+source_file="res://Models/ScalingCube_CM.obj"
+dest_files=["res://.godot/imported/ScalingCube_CM.obj-15fc887c2f25395cfe5def3b9fa6c712.mesh", "res://.godot/imported/ScalingCube_CM.obj-15fc887c2f25395cfe5def3b9fa6c712.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,44 @@
+[gd_scene load_steps=9 format=3 uid="uid://cdscqxb6fdyxg"]
+
+[ext_resource type="ArrayMesh" uid="uid://whxwyfmsa1wr" path="res://Models/SM_Wall.obj" id="1_7163x"]
+[ext_resource type="ArrayMesh" uid="uid://dig21gggeodr2" path="res://Models/SM_FoodBowl.obj" id="2_kme1p"]
+[ext_resource type="ArrayMesh" uid="uid://bopk0kglqynka" path="res://Models/SM_WaterBowl.obj" id="3_ncjr3"]
+[ext_resource type="ArrayMesh" uid="uid://ddxlfpa3hvwsc" path="res://Models/SM_Fence.obj" id="4_rdiu6"]
+[ext_resource type="ArrayMesh" uid="uid://btxmmbxdv1d0p" path="res://Models/SM_Ball_Small.obj" id="5_smibs"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_bqnxe"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gc2lu"]
+specular_mode = 1
+albedo_color = Color(0.43134, 0.43134, 0.43134, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7tudd"]
+
+[node name="ModelTestRoom" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 7, 0, 6)
+mesh = SubResource("PlaneMesh_bqnxe")
+surface_material_override/0 = SubResource("StandardMaterial3D_gc2lu")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.05, 0.5, 0)
+mesh = SubResource("BoxMesh_7tudd")
+
+[node name="SmWall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_7163x")
+
+[node name="SmFoodBowl" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.7715, 0.0908351, 24.5492)
+mesh = ExtResource("2_kme1p")
+
+[node name="SmWaterBowl" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.2288, 0, 39.3518)
+mesh = ExtResource("3_ncjr3")
+
+[node name="SmFence" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -17)
+mesh = ExtResource("4_rdiu6")
+
+[node name="SmBallSmall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("5_smibs")

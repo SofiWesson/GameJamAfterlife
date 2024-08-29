@@ -1,11 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://c7owge1deheb2"]
+[gd_scene load_steps=2 format=3 uid="uid://c7owge1deheb2"]
 
 [ext_resource type="PackedScene" uid="uid://cp14ldqxr0vl3" path="res://Scenes/Placeable.tscn" id="1_0qjpr"]
-[ext_resource type="ArrayMesh" uid="uid://b3hxs3r5w8fo" path="res://Models/SM_Wall.obj" id="2_lxs04"]
 
-[node name="Placeable" instance=ExtResource("1_0qjpr")]
+[node name="Placeable2" instance=ExtResource("1_0qjpr")]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." index="1"]
-mesh = ExtResource("2_lxs04")
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="." index="1"]
 
-[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="." index="2"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." index="2"]
+skeleton = NodePath("../NavigationObstacle3D")
